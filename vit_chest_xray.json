@@ -1,0 +1,1133 @@
+{
+  "source_file": "/mnt/data/vit_chest_xray.py",
+  "classes": [
+    "Cardiomegaly",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "No Finding"
+  ],
+  "rho_list": [
+    1.0,
+    0.9375,
+    0.875,
+    0.8125,
+    0.75,
+    0.6875,
+    0.625,
+    0.5625,
+    0.5,
+    0.4375,
+    0.375,
+    0.3125,
+    0.25,
+    0.1875,
+    0.125,
+    0.0625
+  ],
+  "loss": {
+    "1.0000": {
+      "Cardiomegaly": 0.1636,
+      "Edema": 0.1035,
+      "Consolidation": 0.0975,
+      "Pneumonia": 0.0454,
+      "No Finding": 0.1018
+    },
+    "0.9375": {
+      "Cardiomegaly": 0.2041,
+      "Edema": 0.1384,
+      "Consolidation": 0.1209,
+      "Pneumonia": 0.0507,
+      "No Finding": 0.1214
+    },
+    "0.8750": {
+      "Cardiomegaly": 0.1894,
+      "Edema": 0.1257,
+      "Consolidation": 0.1141,
+      "Pneumonia": 0.0507,
+      "No Finding": 0.1111
+    },
+    "0.8125": {
+      "Cardiomegaly": 0.1976,
+      "Edema": 0.1307,
+      "Consolidation": 0.117,
+      "Pneumonia": 0.0515,
+      "No Finding": 0.1135
+    },
+    "0.7500": {
+      "Cardiomegaly": 0.2048,
+      "Edema": 0.1375,
+      "Consolidation": 0.1216,
+      "Pneumonia": 0.052,
+      "No Finding": 0.1197
+    },
+    "0.6875": {
+      "Cardiomegaly": 0.2045,
+      "Edema": 0.1388,
+      "Consolidation": 0.1198,
+      "Pneumonia": 0.0519,
+      "No Finding": 0.1192
+    },
+    "0.6250": {
+      "Cardiomegaly": 0.2224,
+      "Edema": 0.1487,
+      "Consolidation": 0.1278,
+      "Pneumonia": 0.0525,
+      "No Finding": 0.128
+    },
+    "0.5625": {
+      "Cardiomegaly": 0.2393,
+      "Edema": 0.1591,
+      "Consolidation": 0.1385,
+      "Pneumonia": 0.0541,
+      "No Finding": 0.1394
+    },
+    "0.5000": {
+      "Cardiomegaly": 0.273,
+      "Edema": 0.1947,
+      "Consolidation": 0.1553,
+      "Pneumonia": 0.0595,
+      "No Finding": 0.1627
+    },
+    "0.4375": {
+      "Cardiomegaly": 0.2707,
+      "Edema": 0.1981,
+      "Consolidation": 0.1582,
+      "Pneumonia": 0.0605,
+      "No Finding": 0.1674
+    },
+    "0.3750": {
+      "Cardiomegaly": 0.3081,
+      "Edema": 0.2375,
+      "Consolidation": 0.1778,
+      "Pneumonia": 0.07,
+      "No Finding": 0.1968
+    },
+    "0.3125": {
+      "Cardiomegaly": 0.3478,
+      "Edema": 0.274,
+      "Consolidation": 0.2131,
+      "Pneumonia": 0.0814,
+      "No Finding": 0.2583
+    },
+    "0.2500": {
+      "Cardiomegaly": 0.4187,
+      "Edema": 0.3055,
+      "Consolidation": 0.2549,
+      "Pneumonia": 0.1033,
+      "No Finding": 0.3038
+    },
+    "0.1875": {
+      "Cardiomegaly": 0.5227,
+      "Edema": 0.3551,
+      "Consolidation": 0.3167,
+      "Pneumonia": 0.1288,
+      "No Finding": 0.3591
+    },
+    "0.1250": {
+      "Cardiomegaly": 0.6107,
+      "Edema": 0.4528,
+      "Consolidation": 0.3769,
+      "Pneumonia": 0.1793,
+      "No Finding": 0.4853
+    },
+    "0.0625": {
+      "Cardiomegaly": 0.693,
+      "Edema": 0.5262,
+      "Consolidation": 0.4553,
+      "Pneumonia": 0.33,
+      "No Finding": 0.6674
+    }
+  },
+  "accuracy": {
+    "1.0000": {
+      "Cardiomegaly": 0.9786,
+      "Edema": 0.9872,
+      "Consolidation": 0.9915,
+      "Pneumonia": 0.9872,
+      "No Finding": 0.9915
+    },
+    "0.9375": {
+      "Cardiomegaly": 0.9487,
+      "Edema": 0.9658,
+      "Consolidation": 0.9829,
+      "Pneumonia": 0.9829,
+      "No Finding": 0.9829
+    },
+    "0.8750": {
+      "Cardiomegaly": 0.9701,
+      "Edema": 0.9658,
+      "Consolidation": 0.9915,
+      "Pneumonia": 0.9915,
+      "No Finding": 0.9829
+    },
+    "0.8125": {
+      "Cardiomegaly": 0.9573,
+      "Edema": 0.9701,
+      "Consolidation": 0.9915,
+      "Pneumonia": 0.9872,
+      "No Finding": 0.9829
+    },
+    "0.7500": {
+      "Cardiomegaly": 0.9573,
+      "Edema": 0.9615,
+      "Consolidation": 0.9829,
+      "Pneumonia": 0.9872,
+      "No Finding": 0.9744
+    },
+    "0.6875": {
+      "Cardiomegaly": 0.9701,
+      "Edema": 0.9658,
+      "Consolidation": 0.9872,
+      "Pneumonia": 0.9829,
+      "No Finding": 0.9786
+    },
+    "0.6250": {
+      "Cardiomegaly": 0.9274,
+      "Edema": 0.9573,
+      "Consolidation": 0.9786,
+      "Pneumonia": 0.9829,
+      "No Finding": 0.9744
+    },
+    "0.5625": {
+      "Cardiomegaly": 0.9188,
+      "Edema": 0.9573,
+      "Consolidation": 0.9786,
+      "Pneumonia": 0.9829,
+      "No Finding": 0.9573
+    },
+    "0.5000": {
+      "Cardiomegaly": 0.8932,
+      "Edema": 0.9188,
+      "Consolidation": 0.9658,
+      "Pneumonia": 0.9829,
+      "No Finding": 0.9573
+    },
+    "0.4375": {
+      "Cardiomegaly": 0.9103,
+      "Edema": 0.9231,
+      "Consolidation": 0.9487,
+      "Pneumonia": 0.9829,
+      "No Finding": 0.9615
+    },
+    "0.3750": {
+      "Cardiomegaly": 0.8974,
+      "Edema": 0.906,
+      "Consolidation": 0.9231,
+      "Pneumonia": 0.9744,
+      "No Finding": 0.9786
+    },
+    "0.3125": {
+      "Cardiomegaly": 0.8803,
+      "Edema": 0.8632,
+      "Consolidation": 0.8932,
+      "Pneumonia": 0.9744,
+      "No Finding": 0.9487
+    },
+    "0.2500": {
+      "Cardiomegaly": 0.8291,
+      "Edema": 0.812,
+      "Consolidation": 0.8846,
+      "Pneumonia": 0.9701,
+      "No Finding": 0.9359
+    },
+    "0.1875": {
+      "Cardiomegaly": 0.7778,
+      "Edema": 0.8419,
+      "Consolidation": 0.859,
+      "Pneumonia": 0.9701,
+      "No Finding": 0.8932
+    },
+    "0.1250": {
+      "Cardiomegaly": 0.6966,
+      "Edema": 0.7991,
+      "Consolidation": 0.859,
+      "Pneumonia": 0.9658,
+      "No Finding": 0.8462
+    },
+    "0.0625": {
+      "Cardiomegaly": 0.5598,
+      "Edema": 0.765,
+      "Consolidation": 0.8547,
+      "Pneumonia": 0.953,
+      "No Finding": 0.5726
+    }
+  },
+  "confidence_dominance_rate": {
+    "1.0000": {
+      "0.9375": {
+        "Cardiomegaly": 0.7949,
+        "Edema": 0.5726,
+        "Consolidation": 0.8376,
+        "Pneumonia": 0.6111,
+        "No Finding": 0.6197
+      },
+      "0.8750": {
+        "Cardiomegaly": 0.7735,
+        "Edema": 0.5726,
+        "Consolidation": 0.8291,
+        "Pneumonia": 0.765,
+        "No Finding": 0.4402
+      },
+      "0.8125": {
+        "Cardiomegaly": 0.7821,
+        "Edema": 0.5769,
+        "Consolidation": 0.8205,
+        "Pneumonia": 0.7009,
+        "No Finding": 0.4872
+      },
+      "0.7500": {
+        "Cardiomegaly": 0.7778,
+        "Edema": 0.6026,
+        "Consolidation": 0.8333,
+        "Pneumonia": 0.6838,
+        "No Finding": 0.547
+      },
+      "0.6875": {
+        "Cardiomegaly": 0.7906,
+        "Edema": 0.6068,
+        "Consolidation": 0.8162,
+        "Pneumonia": 0.6581,
+        "No Finding": 0.5385
+      },
+      "0.6250": {
+        "Cardiomegaly": 0.8034,
+        "Edema": 0.6239,
+        "Consolidation": 0.8291,
+        "Pneumonia": 0.6368,
+        "No Finding": 0.6197
+      },
+      "0.5625": {
+        "Cardiomegaly": 0.8291,
+        "Edema": 0.6838,
+        "Consolidation": 0.8718,
+        "Pneumonia": 0.6325,
+        "No Finding": 0.6752
+      },
+      "0.5000": {
+        "Cardiomegaly": 0.859,
+        "Edema": 0.7222,
+        "Consolidation": 0.8932,
+        "Pneumonia": 0.6667,
+        "No Finding": 0.8333
+      },
+      "0.4375": {
+        "Cardiomegaly": 0.8504,
+        "Edema": 0.7137,
+        "Consolidation": 0.8675,
+        "Pneumonia": 0.6795,
+        "No Finding": 0.8462
+      },
+      "0.3750": {
+        "Cardiomegaly": 0.8675,
+        "Edema": 0.7222,
+        "Consolidation": 0.859,
+        "Pneumonia": 0.7863,
+        "No Finding": 0.9231
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.8889,
+        "Edema": 0.8077,
+        "Consolidation": 0.8419,
+        "Pneumonia": 0.8419,
+        "No Finding": 0.9658
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.906,
+        "Edema": 0.8419,
+        "Consolidation": 0.8632,
+        "Pneumonia": 0.8761,
+        "No Finding": 0.9786
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8932,
+        "Edema": 0.9274,
+        "Consolidation": 0.8932,
+        "Pneumonia": 0.9316,
+        "No Finding": 0.9658
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.9402,
+        "Edema": 0.9444,
+        "Consolidation": 0.9274,
+        "Pneumonia": 0.9615,
+        "No Finding": 0.9829
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.9658,
+        "Edema": 0.9487,
+        "Consolidation": 0.9231,
+        "Pneumonia": 0.9744,
+        "No Finding": 0.9957
+      }
+    },
+    "0.9375": {
+      "0.8750": {
+        "Cardiomegaly": 0.3162,
+        "Edema": 0.5128,
+        "Consolidation": 0.312,
+        "Pneumonia": 0.7094,
+        "No Finding": 0.2009
+      },
+      "0.8125": {
+        "Cardiomegaly": 0.406,
+        "Edema": 0.5427,
+        "Consolidation": 0.3419,
+        "Pneumonia": 0.7051,
+        "No Finding": 0.1752
+      },
+      "0.7500": {
+        "Cardiomegaly": 0.5427,
+        "Edema": 0.6239,
+        "Consolidation": 0.5043,
+        "Pneumonia": 0.7265,
+        "No Finding": 0.2991
+      },
+      "0.6875": {
+        "Cardiomegaly": 0.5128,
+        "Edema": 0.594,
+        "Consolidation": 0.4744,
+        "Pneumonia": 0.6496,
+        "No Finding": 0.3376
+      },
+      "0.6250": {
+        "Cardiomegaly": 0.6496,
+        "Edema": 0.6538,
+        "Consolidation": 0.6368,
+        "Pneumonia": 0.5812,
+        "No Finding": 0.5641
+      },
+      "0.5625": {
+        "Cardiomegaly": 0.7521,
+        "Edema": 0.6667,
+        "Consolidation": 0.7222,
+        "Pneumonia": 0.6197,
+        "No Finding": 0.6795
+      },
+      "0.5000": {
+        "Cardiomegaly": 0.7778,
+        "Edema": 0.6923,
+        "Consolidation": 0.8291,
+        "Pneumonia": 0.6239,
+        "No Finding": 0.8932
+      },
+      "0.4375": {
+        "Cardiomegaly": 0.7821,
+        "Edema": 0.7137,
+        "Consolidation": 0.7436,
+        "Pneumonia": 0.6581,
+        "No Finding": 0.8761
+      },
+      "0.3750": {
+        "Cardiomegaly": 0.8376,
+        "Edema": 0.7265,
+        "Consolidation": 0.7308,
+        "Pneumonia": 0.7991,
+        "No Finding": 0.9231
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.8632,
+        "Edema": 0.7863,
+        "Consolidation": 0.7393,
+        "Pneumonia": 0.8504,
+        "No Finding": 0.953
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.8932,
+        "Edema": 0.8504,
+        "Consolidation": 0.8376,
+        "Pneumonia": 0.8932,
+        "No Finding": 0.9615
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8889,
+        "Edema": 0.9103,
+        "Consolidation": 0.8675,
+        "Pneumonia": 0.9274,
+        "No Finding": 0.9701
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.9145,
+        "Edema": 0.9359,
+        "Consolidation": 0.8718,
+        "Pneumonia": 0.9573,
+        "No Finding": 0.9487
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.9145,
+        "Edema": 0.9573,
+        "Consolidation": 0.8718,
+        "Pneumonia": 0.9786,
+        "No Finding": 0.9744
+      }
+    },
+    "0.8750": {
+      "0.8125": {
+        "Cardiomegaly": 0.5983,
+        "Edema": 0.5385,
+        "Consolidation": 0.6026,
+        "Pneumonia": 0.4701,
+        "No Finding": 0.6111
+      },
+      "0.7500": {
+        "Cardiomegaly": 0.7094,
+        "Edema": 0.5855,
+        "Consolidation": 0.7094,
+        "Pneumonia": 0.4316,
+        "No Finding": 0.7607
+      },
+      "0.6875": {
+        "Cardiomegaly": 0.6667,
+        "Edema": 0.641,
+        "Consolidation": 0.6838,
+        "Pneumonia": 0.3846,
+        "No Finding": 0.7094
+      },
+      "0.6250": {
+        "Cardiomegaly": 0.7308,
+        "Edema": 0.6282,
+        "Consolidation": 0.735,
+        "Pneumonia": 0.4274,
+        "No Finding": 0.7949
+      },
+      "0.5625": {
+        "Cardiomegaly": 0.7949,
+        "Edema": 0.641,
+        "Consolidation": 0.7692,
+        "Pneumonia": 0.4274,
+        "No Finding": 0.8376
+      },
+      "0.5000": {
+        "Cardiomegaly": 0.8333,
+        "Edema": 0.6709,
+        "Consolidation": 0.8333,
+        "Pneumonia": 0.5342,
+        "No Finding": 0.9231
+      },
+      "0.4375": {
+        "Cardiomegaly": 0.8205,
+        "Edema": 0.6838,
+        "Consolidation": 0.7692,
+        "Pneumonia": 0.5855,
+        "No Finding": 0.9231
+      },
+      "0.3750": {
+        "Cardiomegaly": 0.859,
+        "Edema": 0.7222,
+        "Consolidation": 0.7564,
+        "Pneumonia": 0.7521,
+        "No Finding": 0.9487
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.8718,
+        "Edema": 0.7821,
+        "Consolidation": 0.7991,
+        "Pneumonia": 0.812,
+        "No Finding": 0.9658
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.8974,
+        "Edema": 0.8205,
+        "Consolidation": 0.8462,
+        "Pneumonia": 0.8462,
+        "No Finding": 0.9701
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8718,
+        "Edema": 0.9103,
+        "Consolidation": 0.8675,
+        "Pneumonia": 0.9145,
+        "No Finding": 0.9744
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.9188,
+        "Edema": 0.9274,
+        "Consolidation": 0.8932,
+        "Pneumonia": 0.9487,
+        "No Finding": 0.9615
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.9274,
+        "Edema": 0.9487,
+        "Consolidation": 0.8718,
+        "Pneumonia": 0.9786,
+        "No Finding": 0.9744
+      }
+    },
+    "0.8125": {
+      "0.7500": {
+        "Cardiomegaly": 0.6111,
+        "Edema": 0.5427,
+        "Consolidation": 0.6667,
+        "Pneumonia": 0.5171,
+        "No Finding": 0.6795
+      },
+      "0.6875": {
+        "Cardiomegaly": 0.6068,
+        "Edema": 0.5983,
+        "Consolidation": 0.6239,
+        "Pneumonia": 0.4872,
+        "No Finding": 0.6581
+      },
+      "0.6250": {
+        "Cardiomegaly": 0.7265,
+        "Edema": 0.6239,
+        "Consolidation": 0.7436,
+        "Pneumonia": 0.4487,
+        "No Finding": 0.8205
+      },
+      "0.5625": {
+        "Cardiomegaly": 0.7735,
+        "Edema": 0.6239,
+        "Consolidation": 0.735,
+        "Pneumonia": 0.4744,
+        "No Finding": 0.8291
+      },
+      "0.5000": {
+        "Cardiomegaly": 0.8205,
+        "Edema": 0.688,
+        "Consolidation": 0.8333,
+        "Pneumonia": 0.5385,
+        "No Finding": 0.9359
+      },
+      "0.4375": {
+        "Cardiomegaly": 0.7991,
+        "Edema": 0.6966,
+        "Consolidation": 0.7521,
+        "Pneumonia": 0.5769,
+        "No Finding": 0.9145
+      },
+      "0.3750": {
+        "Cardiomegaly": 0.8248,
+        "Edema": 0.7179,
+        "Consolidation": 0.7436,
+        "Pneumonia": 0.7607,
+        "No Finding": 0.9402
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.8504,
+        "Edema": 0.7863,
+        "Consolidation": 0.7906,
+        "Pneumonia": 0.812,
+        "No Finding": 0.9573
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.8846,
+        "Edema": 0.8248,
+        "Consolidation": 0.8376,
+        "Pneumonia": 0.8547,
+        "No Finding": 0.9744
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8718,
+        "Edema": 0.9145,
+        "Consolidation": 0.8761,
+        "Pneumonia": 0.9188,
+        "No Finding": 0.9701
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.9231,
+        "Edema": 0.9444,
+        "Consolidation": 0.8761,
+        "Pneumonia": 0.953,
+        "No Finding": 0.9573
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.9145,
+        "Edema": 0.9573,
+        "Consolidation": 0.8761,
+        "Pneumonia": 0.9829,
+        "No Finding": 0.9786
+      }
+    },
+    "0.7500": {
+      "0.6875": {
+        "Cardiomegaly": 0.5128,
+        "Edema": 0.5214,
+        "Consolidation": 0.4658,
+        "Pneumonia": 0.4786,
+        "No Finding": 0.5214
+      },
+      "0.6250": {
+        "Cardiomegaly": 0.6624,
+        "Edema": 0.6026,
+        "Consolidation": 0.6068,
+        "Pneumonia": 0.4615,
+        "No Finding": 0.7308
+      },
+      "0.5625": {
+        "Cardiomegaly": 0.7564,
+        "Edema": 0.6496,
+        "Consolidation": 0.7051,
+        "Pneumonia": 0.4573,
+        "No Finding": 0.7991
+      },
+      "0.5000": {
+        "Cardiomegaly": 0.8291,
+        "Edema": 0.6923,
+        "Consolidation": 0.8376,
+        "Pneumonia": 0.5385,
+        "No Finding": 0.9316
+      },
+      "0.4375": {
+        "Cardiomegaly": 0.7863,
+        "Edema": 0.6795,
+        "Consolidation": 0.7265,
+        "Pneumonia": 0.5983,
+        "No Finding": 0.8889
+      },
+      "0.3750": {
+        "Cardiomegaly": 0.8248,
+        "Edema": 0.7009,
+        "Consolidation": 0.7564,
+        "Pneumonia": 0.7521,
+        "No Finding": 0.9316
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.8504,
+        "Edema": 0.765,
+        "Consolidation": 0.7692,
+        "Pneumonia": 0.8291,
+        "No Finding": 0.9487
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.8803,
+        "Edema": 0.8205,
+        "Consolidation": 0.8419,
+        "Pneumonia": 0.8547,
+        "No Finding": 0.9615
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8632,
+        "Edema": 0.9103,
+        "Consolidation": 0.8675,
+        "Pneumonia": 0.9188,
+        "No Finding": 0.9701
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.906,
+        "Edema": 0.9274,
+        "Consolidation": 0.8675,
+        "Pneumonia": 0.9573,
+        "No Finding": 0.9444
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.9188,
+        "Edema": 0.9402,
+        "Consolidation": 0.8632,
+        "Pneumonia": 0.9829,
+        "No Finding": 0.9786
+      }
+    },
+    "0.6875": {
+      "0.6250": {
+        "Cardiomegaly": 0.6581,
+        "Edema": 0.5983,
+        "Consolidation": 0.6538,
+        "Pneumonia": 0.4701,
+        "No Finding": 0.7009
+      },
+      "0.5625": {
+        "Cardiomegaly": 0.765,
+        "Edema": 0.6068,
+        "Consolidation": 0.7308,
+        "Pneumonia": 0.4915,
+        "No Finding": 0.8376
+      },
+      "0.5000": {
+        "Cardiomegaly": 0.8248,
+        "Edema": 0.6795,
+        "Consolidation": 0.8291,
+        "Pneumonia": 0.5556,
+        "No Finding": 0.9231
+      },
+      "0.4375": {
+        "Cardiomegaly": 0.8077,
+        "Edema": 0.688,
+        "Consolidation": 0.7393,
+        "Pneumonia": 0.5897,
+        "No Finding": 0.8932
+      },
+      "0.3750": {
+        "Cardiomegaly": 0.8504,
+        "Edema": 0.7051,
+        "Consolidation": 0.7308,
+        "Pneumonia": 0.7692,
+        "No Finding": 0.9359
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.8547,
+        "Edema": 0.7735,
+        "Consolidation": 0.765,
+        "Pneumonia": 0.8291,
+        "No Finding": 0.9487
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.8718,
+        "Edema": 0.8248,
+        "Consolidation": 0.8419,
+        "Pneumonia": 0.8632,
+        "No Finding": 0.9658
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8632,
+        "Edema": 0.9188,
+        "Consolidation": 0.8846,
+        "Pneumonia": 0.9231,
+        "No Finding": 0.9658
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.9017,
+        "Edema": 0.9402,
+        "Consolidation": 0.8803,
+        "Pneumonia": 0.9444,
+        "No Finding": 0.9573
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.9188,
+        "Edema": 0.9444,
+        "Consolidation": 0.8761,
+        "Pneumonia": 0.9786,
+        "No Finding": 0.9829
+      }
+    },
+    "0.6250": {
+      "0.5625": {
+        "Cardiomegaly": 0.6838,
+        "Edema": 0.5897,
+        "Consolidation": 0.7009,
+        "Pneumonia": 0.5043,
+        "No Finding": 0.6538
+      },
+      "0.5000": {
+        "Cardiomegaly": 0.8034,
+        "Edema": 0.6923,
+        "Consolidation": 0.8333,
+        "Pneumonia": 0.5812,
+        "No Finding": 0.9103
+      },
+      "0.4375": {
+        "Cardiomegaly": 0.7692,
+        "Edema": 0.6667,
+        "Consolidation": 0.7436,
+        "Pneumonia": 0.6282,
+        "No Finding": 0.8632
+      },
+      "0.3750": {
+        "Cardiomegaly": 0.7949,
+        "Edema": 0.688,
+        "Consolidation": 0.7094,
+        "Pneumonia": 0.7821,
+        "No Finding": 0.9103
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.8376,
+        "Edema": 0.7607,
+        "Consolidation": 0.7308,
+        "Pneumonia": 0.8462,
+        "No Finding": 0.9274
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.859,
+        "Edema": 0.8333,
+        "Consolidation": 0.8162,
+        "Pneumonia": 0.8889,
+        "No Finding": 0.953
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8504,
+        "Edema": 0.906,
+        "Consolidation": 0.8547,
+        "Pneumonia": 0.9188,
+        "No Finding": 0.9658
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.8932,
+        "Edema": 0.9359,
+        "Consolidation": 0.8718,
+        "Pneumonia": 0.9615,
+        "No Finding": 0.9487
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.9103,
+        "Edema": 0.9573,
+        "Consolidation": 0.8632,
+        "Pneumonia": 0.9786,
+        "No Finding": 0.9615
+      }
+    },
+    "0.5625": {
+      "0.5000": {
+        "Cardiomegaly": 0.7308,
+        "Edema": 0.6667,
+        "Consolidation": 0.7906,
+        "Pneumonia": 0.5983,
+        "No Finding": 0.8932
+      },
+      "0.4375": {
+        "Cardiomegaly": 0.7051,
+        "Edema": 0.6239,
+        "Consolidation": 0.641,
+        "Pneumonia": 0.6453,
+        "No Finding": 0.8462
+      },
+      "0.3750": {
+        "Cardiomegaly": 0.7863,
+        "Edema": 0.6667,
+        "Consolidation": 0.6624,
+        "Pneumonia": 0.7735,
+        "No Finding": 0.9359
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.8162,
+        "Edema": 0.735,
+        "Consolidation": 0.688,
+        "Pneumonia": 0.8675,
+        "No Finding": 0.9316
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.8462,
+        "Edema": 0.8034,
+        "Consolidation": 0.7692,
+        "Pneumonia": 0.9145,
+        "No Finding": 0.9402
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8419,
+        "Edema": 0.9103,
+        "Consolidation": 0.8547,
+        "Pneumonia": 0.9487,
+        "No Finding": 0.953
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.8761,
+        "Edema": 0.9274,
+        "Consolidation": 0.8632,
+        "Pneumonia": 0.9615,
+        "No Finding": 0.9487
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.8803,
+        "Edema": 0.9402,
+        "Consolidation": 0.859,
+        "Pneumonia": 0.9786,
+        "No Finding": 0.9701
+      }
+    },
+    "0.5000": {
+      "0.4375": {
+        "Cardiomegaly": 0.5684,
+        "Edema": 0.5085,
+        "Consolidation": 0.4701,
+        "Pneumonia": 0.5983,
+        "No Finding": 0.6111
+      },
+      "0.3750": {
+        "Cardiomegaly": 0.7436,
+        "Edema": 0.6239,
+        "Consolidation": 0.5299,
+        "Pneumonia": 0.812,
+        "No Finding": 0.8504
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.7821,
+        "Edema": 0.7222,
+        "Consolidation": 0.5983,
+        "Pneumonia": 0.8761,
+        "No Finding": 0.9188
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.8547,
+        "Edema": 0.7821,
+        "Consolidation": 0.7521,
+        "Pneumonia": 0.9145,
+        "No Finding": 0.9316
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8376,
+        "Edema": 0.8974,
+        "Consolidation": 0.8248,
+        "Pneumonia": 0.9573,
+        "No Finding": 0.9359
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.8846,
+        "Edema": 0.906,
+        "Consolidation": 0.8205,
+        "Pneumonia": 0.9615,
+        "No Finding": 0.9274
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.8846,
+        "Edema": 0.9103,
+        "Consolidation": 0.8291,
+        "Pneumonia": 0.9744,
+        "No Finding": 0.9658
+      }
+    },
+    "0.4375": {
+      "0.3750": {
+        "Cardiomegaly": 0.735,
+        "Edema": 0.6197,
+        "Consolidation": 0.5855,
+        "Pneumonia": 0.8034,
+        "No Finding": 0.8803
+      },
+      "0.3125": {
+        "Cardiomegaly": 0.8034,
+        "Edema": 0.7179,
+        "Consolidation": 0.6581,
+        "Pneumonia": 0.8675,
+        "No Finding": 0.9487
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.8504,
+        "Edema": 0.7991,
+        "Consolidation": 0.7778,
+        "Pneumonia": 0.9103,
+        "No Finding": 0.9615
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8462,
+        "Edema": 0.9017,
+        "Consolidation": 0.8419,
+        "Pneumonia": 0.9658,
+        "No Finding": 0.9444
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.8974,
+        "Edema": 0.9103,
+        "Consolidation": 0.8462,
+        "Pneumonia": 0.9573,
+        "No Finding": 0.9274
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.8974,
+        "Edema": 0.9017,
+        "Consolidation": 0.8333,
+        "Pneumonia": 0.9786,
+        "No Finding": 0.9701
+      }
+    },
+    "0.3750": {
+      "0.3125": {
+        "Cardiomegaly": 0.765,
+        "Edema": 0.735,
+        "Consolidation": 0.6966,
+        "Pneumonia": 0.812,
+        "No Finding": 0.8547
+      },
+      "0.2500": {
+        "Cardiomegaly": 0.8248,
+        "Edema": 0.7991,
+        "Consolidation": 0.8077,
+        "Pneumonia": 0.8718,
+        "No Finding": 0.9188
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.859,
+        "Edema": 0.8932,
+        "Consolidation": 0.8291,
+        "Pneumonia": 0.9701,
+        "No Finding": 0.9017
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.8846,
+        "Edema": 0.9103,
+        "Consolidation": 0.8547,
+        "Pneumonia": 0.9487,
+        "No Finding": 0.8889
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.8974,
+        "Edema": 0.9103,
+        "Consolidation": 0.8462,
+        "Pneumonia": 0.9744,
+        "No Finding": 0.9402
+      }
+    },
+    "0.3125": {
+      "0.2500": {
+        "Cardiomegaly": 0.7607,
+        "Edema": 0.6923,
+        "Consolidation": 0.765,
+        "Pneumonia": 0.8077,
+        "No Finding": 0.7735
+      },
+      "0.1875": {
+        "Cardiomegaly": 0.8205,
+        "Edema": 0.8419,
+        "Consolidation": 0.8419,
+        "Pneumonia": 0.9359,
+        "No Finding": 0.7735
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.8632,
+        "Edema": 0.8932,
+        "Consolidation": 0.8333,
+        "Pneumonia": 0.9615,
+        "No Finding": 0.8248
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.8803,
+        "Edema": 0.9103,
+        "Consolidation": 0.8248,
+        "Pneumonia": 0.9744,
+        "No Finding": 0.906
+      }
+    },
+    "0.2500": {
+      "0.1875": {
+        "Cardiomegaly": 0.765,
+        "Edema": 0.8718,
+        "Consolidation": 0.8205,
+        "Pneumonia": 0.8547,
+        "No Finding": 0.6966
+      },
+      "0.1250": {
+        "Cardiomegaly": 0.7991,
+        "Edema": 0.8889,
+        "Consolidation": 0.812,
+        "Pneumonia": 0.9658,
+        "No Finding": 0.812
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.7991,
+        "Edema": 0.8889,
+        "Consolidation": 0.8291,
+        "Pneumonia": 0.9829,
+        "No Finding": 0.8974
+      }
+    },
+    "0.1875": {
+      "0.1250": {
+        "Cardiomegaly": 0.7179,
+        "Edema": 0.8162,
+        "Consolidation": 0.6795,
+        "Pneumonia": 0.8632,
+        "No Finding": 0.765
+      },
+      "0.0625": {
+        "Cardiomegaly": 0.7479,
+        "Edema": 0.8547,
+        "Consolidation": 0.7692,
+        "Pneumonia": 0.9829,
+        "No Finding": 0.8932
+      }
+    },
+    "0.1250": {
+      "0.0625": {
+        "Cardiomegaly": 0.6111,
+        "Edema": 0.6624,
+        "Consolidation": 0.7393,
+        "Pneumonia": 0.9701,
+        "No Finding": 0.8034
+      }
+    }
+  },
+  "notes": {
+    "definition_confidence": "confidence = max(sigmoid(logit), 1 - sigmoid(logit)) per class per sample (as in script)",
+    "rate_definition": "rate_conf[rho1][rho2][class] = mean over samples of 1(confidence[rho1] > confidence[rho2]) for that class",
+    "missing": "Mean confidence vs rho is not printed in the script comments; only pairwise dominance rates are available in the file text."
+  }
+}
